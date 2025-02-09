@@ -20,6 +20,17 @@ main{
     width: 250px;
 }
 
+h1{
+    text-align: center;
+    padding: 10px;
+}
+
+p{
+    padding: 0px 5px 5px 10px;
+    font-size: 13px;
+    text-align: start;
+}
+
 form{
     display: flex;
     flex-direction: column;
