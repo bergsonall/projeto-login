@@ -5,35 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Projeto Login</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style.css" media="all">
     <link rel="stylesheet" href="styles/mediaquery.css">
+    <style type="text/css" id="operaUserStyle"></style>
 </head>
 <body>
     <main>
-        <section id="imagem">
-            <img src="image/metal.jpg" alt="brasil">
-        </section>
         <section id="login">
-            <h1>Login</h1>
-            <p>
-                Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.
-            </p>
-            <form action="cadastro.php">
-                <div class="campo">
-                    <i class="material-icons">person</i>
-                    <input type="email" name="login" id="ilogin" placeholder="seu e-mail" required>
-                </div>
-                <div class="campo">
-                    <i class="material-icons">vpn_key</i>
-                    <input type="password" name="senha" id="isenha" placeholder="sua senha" required minlength="8" maxlength="20">
-                </div>
+            <div id="imagem">
+                <img src="image/metal.jpg" alt="brasil">
+            </div>
+            <div id="formulario">
+                <h1>Login</h1>
                 <p>
-                    <input type="submit" value="Entrar">
+                    Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.
                 </p>
-                <a href="esqueci.html">
-                    Esqueci a senha <i class="material-icons">mail</i>
-                </a>
-            </form>
+                <form action="cadastro.php" method="post">
+                    <div class="campo">
+                        <i class="material-icons">person</i>
+                        <input type="email" name="login" id="ilogin" placeholder="  seu e-mail" required>
+                    </div>
+                    <div class="campo">
+                        <i class="material-icons">vpn_key</i>
+                        <input type="password" name="senha" id="isenha" placeholder="  sua senha" required minlength="8" maxlength="20">
+                    </div>
+                    <input type="submit" value="Entrar" class="botao enviar">
+                    <a href="esqueci.html" class="botao">
+                        Esqueci a senha <i class="material-icons">mail</i>
+                    </a>
+                </form>
+            </div>
         </section>
     </main>
 </body>
